@@ -12,8 +12,8 @@ const Donation = () => {
 
    const navigate = useNavigate();
 
-   const [firstName, setFirstName] = useState("");
-   const [lastName, setLastName] = useState("");
+   const [firstname, setFirstName] = useState("");
+   const [lastname, setLastName] = useState("");
    const [email, setEmail] = useState("");
    const [country, setCountry] = useState("");
    const [city, setCity] = useState("");
@@ -38,8 +38,8 @@ const Donation = () => {
      }
 
      const formData = {
-       firstName,
-       lastName,
+       firstname,
+       lastname,
        email,
        country,
        city,
@@ -170,7 +170,7 @@ const Donation = () => {
                   <input
                     className="w-full p-3 border border-green-200 rounded-lg focus:ring-2 focus:ring-green-400"
                     placeholder="First Name"
-                    value={firstName}
+                    value={firstname}
                     id="firstname"
                     onChange={(e) => setFirstName(e.target.value)}
                     required
@@ -179,7 +179,7 @@ const Donation = () => {
                     className="w-full p-3 border border-green-200 rounded-lg focus:ring-2 focus:ring-green-400"
                     placeholder="Last Name"
                     id="lastname"
-                    value={lastName}
+                    value={lastname}
                     onChange={(e) => setLastName(e.target.value)}
                     required
                   />
