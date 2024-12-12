@@ -217,12 +217,12 @@
 //               education, and healthcare to communities in need.
 //             </p>
 //             <p className="mb-4">
-//               With your help, we can continue to make a significant impact and
-//               improve lives around the world.
+              // With your help, we can continue to make a significant impact and
+              // improve lives around the world.
 //             </p>
 //             <p>
-//               Every contribution, no matter the size, makes a difference. Thank
-//               you for your generosity and support.
+              // Every contribution, no matter the size, makes a difference. Thank
+              // you for your generosity and support.
 //             </p>
 //           </div>
 //         </div>
@@ -450,8 +450,10 @@ const Donation = () => {
                       Global Reach
                     </h3>
                     <p className="text-gray-500">
-                      Your donation supports local communities worldwide,
-                      impacting thousands of lives.
+                      With your help, we can continue to make a significant
+                      impact and improve lives around the world. Every
+                      contribution, no matter the size, makes a difference.
+                      Thank you for your generosity and support.
                     </p>
                   </div>
                 </div>
