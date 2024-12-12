@@ -292,8 +292,8 @@ const Donation = () => {
       <div className="bg-gradient-to-br min-h-screen p-4 md:p-8">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center justify-center mb-8 text-center">
-            <HandHeart className="text-green-600 mb-4" size={48} />
-            <h1 className="text-3xl md:text-4xl font-extrabold text-green-800">
+            <HandHeart className="text-primary mb-4" size={48} />
+            <h1 className="text-3xl md:text-4xl font-extrabold text-primary">
               Support Our Mission
             </h1>
           </div>
