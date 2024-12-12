@@ -288,8 +288,7 @@ const Donation = () => {
 
   return (
     <>
-  
-     <Navbar /> 
+      <Navbar />
       <div className="bg-gradient-to-br min-h-screen p-4 md:p-8">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center justify-center mb-8 text-center">
@@ -307,7 +306,7 @@ const Donation = () => {
                   <button
                     className={`px-4 py-2 rounded-lg text-sm md:text-base transition-colors ${
                       donationType === "oneTime"
-                        ? "bg-green-600 text-white"
+                        ? "bg-gradient-to-r from-primary to-secondary text-white"
                         : "text-green-800 hover:bg-green-200"
                     }`}
                     onClick={() => setDonationType("oneTime")}
@@ -425,7 +424,7 @@ const Donation = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-green-600 text-white py-4 rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center font-bold"
+                  className="w-full bg-gradient-to-r from-primary to-secondary text-white py-4 rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center font-bold"
                 >
                   <Heart className="mr-2" size={20} />
                   Donate {amount} USD{" "}
@@ -435,22 +434,22 @@ const Donation = () => {
             </div>
 
             {/* Impact Section */}
-            <div className="bg-green-600 text-white rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-2xl">
+            <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-2xl">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center">
                   <Globe className="mr-4" size={32} />
                   Why Your Donation Matters
                 </h2>
                 <div className="space-y-4">
-                  <p className="text-sm md:text-lg leading-relaxed">
+                  <p className="text-sm md:text-lg leading-relaxed ">
                     Your donations support our ongoing efforts to provide clean
                     water, education, and healthcare to communities in need.
                   </p>
-                  <div className="bg-green-700 p-4 rounded-lg">
-                    <h3 className="font-bold text-lg md:text-xl mb-2">
+                  <div className="bg-white p-4 rounded-lg shadow-lg">
+                    <h3 className="font-bold text-lg md:text-xl mb-2 text-gray-500">
                       Global Reach
                     </h3>
-                    <p>
+                    <p className="text-gray-500">
                       Your donation supports local communities worldwide,
                       impacting thousands of lives.
                     </p>
@@ -461,7 +460,7 @@ const Donation = () => {
           </div>
         </div>
       </div>
-     <Footer />
+      <Footer />
     </>
   );
 };
