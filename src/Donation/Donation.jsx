@@ -5,7 +5,8 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Donation = () => {
 
@@ -209,7 +210,7 @@ const Donation = () => {
                     placeholder="City"
                     id="City"
                     value={city}
-                    onChange={(e) => setCountry(e.target.value)}
+                    onChange={(e) => setCity(e.target.value)}
                     required
                   />
                 </div>
@@ -223,6 +224,7 @@ const Donation = () => {
                   {donationType === "monthly" ? "Monthly" : ""}
                 </button>
               </form>
+              <ToastContainer />
             </div>
 
             {/* Impact Section */}
