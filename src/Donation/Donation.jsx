@@ -1,55 +1,82 @@
 
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { Heart, DollarSign, Globe, HandHeart, CreditCard } from "lucide-react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Donation = () => {
 
-  const navigate = useNavigate();
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [country, setCountry] = useState("");
-  const [city, setCity] = useState("");
-  const [amount, setAmount] = useState(50);
-  const [selectedAmount, setSelectedAmount] = useState(50);
-  const [donationType, setDonationType] = useState("oneTime");
-  const [paymentMethod, setPaymentMethod] = useState(null);
+   const navigate = useNavigate();
 
-  const donationAmounts = [50, 100, 500, 1000];
+   const [firstName, setFirstName] = useState("");
+   const [lastName, setLastName] = useState("");
+   const [email, setEmail] = useState("");
+   const [country, setCountry] = useState("");
+   const [city, setCity] = useState("");
+   const [amount, setAmount] = useState(50);
+   const [selectedAmount, setSelectedAmount] = useState(50);
+   const [donationType, setDonationType] = useState("oneTime");
+   const [paymentMethod, setPaymentMethod] = useState(null);
 
-  const handleAmountClick = (selectedAmount) => {
-    setAmount(selectedAmount);
-    setSelectedAmount(selectedAmount);
-  };
+   const donationAmounts = [50, 100, 500, 1000];
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!paymentMethod) {
-      alert("Please select a payment method");
-      return;
-    }
-    navigate("/payment", {
-      state: {
-        firstName,
-        lastName,
-        email,
-        country,
-        city,
-        amount,
-        donationType,
-        paymentMethod,
-      },
-    });
-  };
+   const handleAmountClick = (selectedAmount) => {
+     setAmount(selectedAmount);
+     setSelectedAmount(selectedAmount);
+   };
 
-  useEffect(() => {
-    if (paymentMethod === "paypal") {
-      setAmount(50); // Set default donation amount for PayPal
-    }
-  }, [paymentMethod]);
+   const handleSubmit = async (e) => {
+     e.preventDefault();
+
+     if (!paymentMethod) {
+       alert("Please select a payment method");
+       return;
+     }
+
+     const formData = {
+       firstName,
+       lastName,
+       email,
+       country,
+       city,
+       amount,
+       donationType,
+       paymentMethod,
+     };
+
+     try {
+       console.log("Request Data:", formData);
+
+       const response = await axios.post(
+         "https://auction-website-auji.onrender.com/api/v1/donations",
+         formData,
+         {
+           headers: {
+             "Content-Type": "application/json",
+           },
+         }
+       );
+
+       console.log("Response Data:", response.data);
+       toast.success("Donation created successfully");
+
+       setTimeout(() => {
+         navigate("/checkout");
+       }, 2000);
+     } catch (error) {
+       console.error("Error:", error.response ? error.response.data : error);
+       toast.error("Failed to donate. Please try again later.");
+     }
+   };
+
+   useEffect(() => {
+     if (paymentMethod === "paypal") {
+       setAmount(50);
+     }
+   }, [paymentMethod]);
 
   return (
     <>
@@ -176,19 +203,7 @@ const Donation = () => {
                     onChange={(e) => setCountry(e.target.value)}
                     required
                   />
-                  {/* <select
-                    className="w-full p-3 border border-green-200 rounded-lg focus:ring-2 focus:ring-green-400"
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
-                    required
-                  >
-                    <option value="">Select City</option>
-                    <option value="Kigali">Kigali</option>
-                    <option value="Nairobi">Nairobi</option>
-                    <option value="Dar Es Salaam">Dar Es Salaam</option>
-                    <option value="Mombasa">Mombasa</option>
-                    <option value="Accra">Accra</option>
-                  </select> */}
+               
                   <input
                     className="w-full p-3 border border-green-200 rounded-lg focus:ring-2 focus:ring-green-400"
                     placeholder="City"
