@@ -13,13 +13,10 @@ import { CiFacebook } from "react-icons/ci";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import pic1 from "../../assets/pic1.jpg";
 import code from "../../assets/women/code.jpg";
-import save from "../../assets/women/save.jpg";
 import log from "../../assets/women/log.png"
 
 const Footer = () => {
-  
    const [email, setEmail] = useState("");
 
    const handleChange = (e) => {
