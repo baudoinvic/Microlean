@@ -106,7 +106,6 @@ function Dashboard() {
           </div>
         </div>
 
-        {/* Content */}
         <div className="flex-1 p-8">
           <div className="sidebar-right-side">
             <Outlet />
