@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { IoMdHome } from "react-icons/io";
@@ -21,7 +20,7 @@ function Dashboard() {
   return (
     <div data-aos="zoom-in">
       <div className="flex flex-col md:flex-row h-screen">
-        {/* Mobile Sidebar Toggle Button */}
+    
         <div className="md:hidden flex justify-between items-center bg-white p-4">
           <span className="text-2xl font-bold tracking-wide text-black">
             Admin
@@ -35,7 +34,7 @@ function Dashboard() {
           </button>
         </div>
 
-        {/* Sidebar */}
+ 
         <div
           className={`bg-white text-white w-full md:w-64 flex flex-col justify-between shadow-md transition-all duration-300 ${
             isSidebarOpen
