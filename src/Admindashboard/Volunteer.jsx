@@ -1,7 +1,4 @@
 import React from 'react'
-import { GiDialPadlock } from "react-icons/gi";
-import { MdDeleteOutline } from "react-icons/md";
-import { FaEdit } from "react-icons/fa";
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from 'react';
