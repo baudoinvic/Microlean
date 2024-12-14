@@ -6,7 +6,6 @@ import { useState,useEffect } from 'react';
 import { ToastContainer, toast } from "react-toastify";
 import { Link } from 'react-router-dom';
 
-
 const Users = () => {
 
   const[users, setUsers] = useState ([]);
