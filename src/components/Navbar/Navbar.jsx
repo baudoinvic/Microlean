@@ -128,14 +128,7 @@ const Navbar = ({ handleOrderPopup }) => {
 
           <div className="flex justify-between items-center gap-4">
           
-            <Link to="/Login">
-              <div className="sign-in flex">
-                <FaRegUser className="mt-2" />
-                <span className="text-gray-900 mt-1">Sign in</span>
-              </div>
-            </Link>
-           
-
+          
             <button
               className="sm:hidden block text-gray-600 dark:text-gray-300 focus:outline-none"
               onClick={toggleMenu}
