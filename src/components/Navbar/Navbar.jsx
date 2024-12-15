@@ -1,12 +1,8 @@
 
-
 import React, { useState } from "react";
 import log from "../../assets/women/log.png";
-import { IoMdSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { FaRegUser } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
-
 
 const Menu = [
   {
