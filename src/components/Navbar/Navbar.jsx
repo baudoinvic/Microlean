@@ -117,7 +117,7 @@ const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
      
-      <div className="bg-white py-4">
+      <div className=" py-4">
         <div className="container flex justify-between items-center">
           <div>
             <a href="/" className="font-bold text-2xl sm:text-3xl flex gap-2">
@@ -127,7 +127,6 @@ const Navbar = ({ handleOrderPopup }) => {
           </div>
 
           <div className="flex justify-between items-center gap-4">
-          
           
             <button
               className="sm:hidden block text-gray-600 dark:text-gray-300 focus:outline-none"
@@ -223,7 +222,7 @@ const Navbar = ({ handleOrderPopup }) => {
                 <>
                   <button className="flex items-center px-4 py-2 hover:text-primary duration-200">
                     {data.name}
-                    {/* <FaChevronDown className="ml-1" /> */}
+               
                   </button>
                   {activeDropdown === index && (
                     <ul className="absolute left-0 top-full bg-white dark:bg-gray-800 shadow-md rounded-md py-2 min-w-[200px]">
