@@ -113,8 +113,8 @@ const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
      
-      <div className=" py-4">
-        <div className="container flex justify-between items-center">
+      <div className="">
+        <div className="">
           <div>
             <a href="/" className="font-bold text-2xl sm:text-3xl flex gap-2">
               <img src={log} alt="Logo" className="w-10" />
