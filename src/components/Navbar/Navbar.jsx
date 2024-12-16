@@ -151,7 +151,6 @@ const Navbar = ({ handleOrderPopup }) => {
                 )}
               </svg>
             </button>
-         
         </div>
       </div>
 
