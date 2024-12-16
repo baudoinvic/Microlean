@@ -153,6 +153,7 @@ const Navbar = ({ handleOrderPopup }) => {
             </button>
         </div>
       </div>
+      
 
       {/* Mobile menu */}
       <div
