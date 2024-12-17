@@ -154,7 +154,6 @@ const Navbar = ({ handleOrderPopup }) => {
         </div>
       </div>
       
-
       {/* Mobile menu */}
       <div
         className={`${
