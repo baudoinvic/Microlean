@@ -114,7 +114,7 @@ const Navbar = ({ handleOrderPopup }) => {
   
 
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
-      <div className="flex justify-between items-center px-4 py-3">
+      <div className="flex justify-between items-center px-4 py-6">
         {/* Left Section: Logo */}
         <div className="flex items-center">
           <a href="/" className="font-bold text-2xl sm:text-3xl flex gap-2">
