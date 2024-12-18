@@ -113,7 +113,7 @@ const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
      
-      <div className="">
+      <div className="flex">
        
           <div>
             <a href="/" className="font-bold text-2xl sm:text-3xl flex gap-2">
