@@ -136,7 +136,7 @@ const Navbar = ({ handleOrderPopup }) => {
                 <>
                   <button className="flex items-center px-4 py-2 hover:text-primary duration-200">
                     {data.name}
-                    <FaChevronDown className="ml-1" />
+                 
                   </button>
                   {activeDropdown === data.id && (
                     <ul className="absolute left-0 top-full bg-white dark:bg-gray-800 shadow-md rounded-md py-2 min-w-[200px]">
