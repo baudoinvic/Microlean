@@ -12,9 +12,7 @@ function Signup() {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
-    username: "",
-    email: "",
-    location: "",
+    phone: "",
     password: "",
   });
 
@@ -101,45 +99,20 @@ function Signup() {
               </div>
 
               <div className="mb-4">
-                <label htmlFor="email" className="block font-medium mb-1">
-                  Email
+                <label htmlFor="phone" className="block font-medium mb-1">
+                 Phone
                 </label>
                 <input
                   type="text"
-                  id="email"
-                  name="email"
-                  onChange={handleChange}
-                  required
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="username" className="block font-medium mb-1">
-                  Username
-                </label>
-                <input
-                  type="text"
-                  id="username"
-                  name="username"
+                  id="phone"
+                  name="phone"
                   onChange={handleChange}
                   required
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                 />
               </div>
 
-              <div className="mb-4">
-                <label htmlFor="location" className="block font-medium mb-1">
-                  Location
-                </label>
-                <input
-                  type="text"
-                  id="location"
-                  name="location"
-                  onChange={handleChange}
-                  required
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                />
-              </div>
+            
 
               <div className="mb-4">
                 <label htmlFor="password" className="block font-medium mb-1">

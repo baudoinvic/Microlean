@@ -14,83 +14,12 @@ const Menu = [
     id: 2,
     name: "About Us",
     link: "/About",
-    submenu: [
-      {
-        id: 21,
-        name: "Who We Are",
-        link: "/About",
-      },
-      {
-        id: 22,
-        name: "Our History",
-        link: "/Historic",
-      },
-      {
-        id: 23,
-        name: "Our Leadership Team",
-        link: "/Leadership",
-      },
-      {
-        id: 24,
-        name: "Who Can Donate",
-        link: "/Donate",
-      },
-    ],
   },
 
   {
     id: 3,
-    name: "What We Do",
-    link: "/Service",
-    submenu: [
-      {
-        id: 21,
-        name: "Youth training",
-        link: "/Youth",
-      },
-      {
-        id: 22,
-        name: "Fundraising ",
-        link: "/Fun",
-      },
-      {
-        id: 23,
-        name: "Women Empowerment",
-        link: "/Women",
-      },
-      {
-        id: 24,
-        name: "Events",
-        link: "/Event",
-      },
-      {
-        id: 24,
-        name: "Newsletters",
-        link: "/News",
-      },
-    ],
-  },
-
- 
-  {
-    id: 4,
-    name: "Our Gallery",
-    link: "/Gallery",
-  },
-  {
-    id: 5,
-    name: "Our Campaigns",
-    link: "/Compaign",
-  },
-  {
-    id: 6,
-    name: "Impact",
-    link: "/Funraise",
-  },
-  {
-    id: 7,
-    name: "Contact Us",
-    link: "/Contact",
+    name: "Login",
+    link: "/Login",
   },
 ];
 
@@ -118,8 +47,8 @@ const Navbar = ({ handleOrderPopup }) => {
         {/* Left Section: Logo */}
         <div className="flex items-center">
           <a href="/" className="font-bold text-2xl sm:text-3xl flex gap-2">
-            <img src={log} alt="Logo" className="w-10" />
-            SICP
+          
+             Microloan
           </a>
         </div>
 

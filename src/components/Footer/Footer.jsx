@@ -57,18 +57,9 @@ const Footer = () => {
       <div className="container mx-auto p-8 md:p-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-6">
-            <div className="flex items-center space-x-4">
-              <img src={log} alt="Logo" className="w-10 rounded-full" />
-              <h3 className="font-bold text-1xl text-primary w-2/3">
-                Solidarity Initiative for Children and People(SICP)
-              </h3>
-            </div>
+         
 
-            <p className="text-gray-300">
-              Together, we can make a lasting
-              <br /> impact and create a brighter future
-              <br /> for children and people in need.
-            </p>
+          
             <div>
               <p className="text-lg font-semibold mb-3">
                 Subscribe to our News letter
@@ -96,21 +87,21 @@ const Footer = () => {
               <h3>Follow us</h3>
               <div className="flex space-x-4 mt-4">
                 <a
-                  href="https://www.facebook.com/sicpcharity?mibextid=ZbWKwL"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <CiFacebook className="cursor-pointer text-3xl hover:bg-primary" />
                 </a>
                 <a
-                  href="https://youtube.com/@sicpcharity?si=Pmw5ZNp2pR7CWm5V"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaYoutube className="cursor-pointer text-3xl hover:bg-primary" />
                 </a>
                 <a
-                  href="https://www.instagram.com/sicpcharity?igsh=MXZiY2g5MzJkeW84cg=="
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -118,7 +109,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="https://x.com/chrisbi33?s=09"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -140,29 +131,19 @@ const Footer = () => {
                 Home
               </Link>
               <Link
-                to="/Event"
+                to="/About"
                 className="block text-gray-300 hover:text-primary transition duration-300"
               >
-                Our Events
+               About
               </Link>
               <Link
-                to="/News"
+                to=""
                 className="block text-gray-300 hover:text-primary transition duration-300"
               >
-                News Letters
+                Microloan
               </Link>
-              <Link
-                to="/Donation"
-                className="block text-gray-300 hover:text-primary transition duration-300"
-              >
-                Donate
-              </Link>
-              <Link
-                to="/contact"
-                className="block text-gray-300 hover:text-primary transition duration-300"
-              >
-                Contact Us
-              </Link>
+            
+           
             </nav>
           </div>
 
@@ -170,34 +151,29 @@ const Footer = () => {
             <h2 className="text-1xl font-bold text-primary mb-6">Links</h2>
             <nav className="space-y-3">
               <Link
-                to="/compaign"
+                to=""
                 className="block text-gray-300 hover:text-primary transition duration-300"
               >
-                Our Campaigns
+                Home
               </Link>
               <Link
-                to="/funraise"
+                to=""
                 className="block text-gray-300 hover:text-primary transition duration-300"
               >
-                Our impact
+                Microloan
               </Link>
               <Link
                 to="/service"
                 className="block text-gray-300 hover:text-primary transition duration-300"
               >
-                What We Do
+                About
               </Link>
+             
               <Link
-                to="/About"
+                to="/"
                 className="block text-gray-300 hover:text-primary transition duration-300"
               >
-                About Us
-              </Link>
-              <Link
-                to="/Donation"
-                className="block text-gray-300 hover:text-primary transition duration-300"
-              >
-                Donation
+                Loan
               </Link>
             </nav>
           </div>
@@ -206,24 +182,15 @@ const Footer = () => {
             <h2 className="text-1xl font-bold text-primary mb-6">
               Our Contact
             </h2>
-            <p className="mb-4 text-gray-300  hover:text-primary transition duration-300 flex items-center mr-10">
-              Chief Executive Officer
-            </p>
+           
             <nav className="space-y-4">
+            
               <a
-                href="mailto: chrisbisangwaceo@sicpcharity.org
-"
-                className="block text-gray-300 hover:text-primary transition duration-300 flex items-center"
-              >
-                <MdOutlineMailOutline className="text-2xl mr-3" />
-                chrisbisangwaceo@sicpcharity.org
-              </a>
-              <a
-                href="tel: +250793017617"
+                href="tel: +250788888888"
                 className="block text-gray-300 hover:text-primary transition duration-300 flex items-center"
               >
                 <FaPhoneAlt className="text-xl mr-3" />
-                 +250793017617
+                 +250788888888
               </a>
               <a
                 href="https://goo.gl/maps/yourAddress"
@@ -233,20 +200,11 @@ const Footer = () => {
               >
                 <IoLocationOutline className="text-2xl mr-3 mt-1" />
                 <span>
-                  Paroisse St Famille Central
-                  <br /> St Dominic 32
-                  <br /> FW+4JH Gatsata Road
-                  <br /> vers Byumba, Kigali
+                  Kigali Rwanda
                 </span>
               </a>
             </nav>
-            <div className="pt-10">
-              <img
-                src={code}
-                className="w-32 h-32 rounded-lg ml-10 p"
-                alt="Description"
-              />
-            </div>
+        
           </div>
         </div>
 

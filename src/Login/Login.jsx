@@ -7,8 +7,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -19,7 +19,7 @@ const Login = () => {
         method: "POST",
         url: "https://auction-website-auji.onrender.com/api/v1/auth",
         data: {
-          username: username,
+          username: phone,
           password: password,
         },
       });
@@ -70,15 +70,15 @@ const Login = () => {
             <h1 className="text-3xl font-bold mb-6">Sign in</h1>
             <form onSubmit={handleLogin}>
               <div className="mb-4">
-                <label htmlFor="username" className="block font-medium mb-1">
-                  Username
+                <label htmlFor="Phone" className="block font-medium mb-1">
+                  Phone
                 </label>
                 <input
                   type="text"
-                  id="username"
-                  name="username"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
+                  id="phone"
+                  name="phone"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   required
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                 />
