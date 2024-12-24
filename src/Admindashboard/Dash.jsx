@@ -125,13 +125,7 @@ useEffect(() => {
               </button>
             </div>
             <div className="relative ml-4">
-              <div className="w-10 h-10 rounded-full overflow-hidden">
-                <img
-                  src={pic24}
-                  alt="profile"
-                  className="w-10 rounded-full object-coover cursor-pointer"
-                />
-              </div>
+            
               <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
             </div>
           </div>
@@ -139,18 +133,12 @@ useEffect(() => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {[
-            {
-              icon: FaInstalod,
-              title: "Donations",
-              count: donations.length,
-              subtitle: "Items up for Donations",
-              color: "orange",
-            },
+           
             {
               icon: HiUserGroup,
-              title: "Donners",
+              title: "Applications",
               count: donations.length,
-              subtitle: "Total Donors",
+              subtitle: "Total applications",
               color: "orange",
             },
             {
@@ -162,9 +150,9 @@ useEffect(() => {
             },
             {
               icon: HiShoppingCart,
-              title: "Volunteers",
+              title: "Applied",
               count: donations.length,
-              subtitle: "Total Volunteers",
+              subtitle: "Total for those who applied",
               color: "orange",
             },
           ].map((item, index) => (

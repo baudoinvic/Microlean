@@ -6,6 +6,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 function Signup() {
   const navigate = useNavigate(); 
 
@@ -128,6 +129,8 @@ function Signup() {
                 />
               </div>
 
+
+             
               <button
                 type="submit"
                 className="bg-primary text-white w-full py-2 rounded-md hover:bg-primary"

@@ -17,6 +17,11 @@ import Chart from "./Admindashboard/Chart";
 import Hero from "./components/Hero";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import Header from "./components/Header/Header";
+import Application from "./Admindashboard/Application";
+import Loan from "./components/Loan/Loan";
+import LoanApplicationList from "./components/Done";
+import Approved from "./Admindashboard/Approved";
+import Done from "./components/Done";
 
 const CommonLayout = ({ children }) => {
   return (
@@ -49,15 +54,14 @@ const App = () => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <BrowserRouter>
-        <ScrollToTop /> 
+        <ScrollToTop />
         <Routes>
           <Route
             path="/"
             element={
               <CommonLayout>
                 <Hero handleOrderPopup={handleOrderPopup} />
-                 <Header />
-              
+                <Header />
               </CommonLayout>
             }
           />
@@ -66,12 +70,15 @@ const App = () => {
           <Route path="/Signup" element={<Signup />} />
           <Route path="/About" element={<About />} />
           <Route path="/Header" element={<Header />} />
+          <Route path="/Loan" element={<Loan />} />
+          <Route path="/Done" element={<Done />} />
 
           {/* Dashboard routes */}
           <Route path="/Admindashboard/Dashboard" element={<Dashboard />}>
             <Route path="" element={<Dash />} />
             <Route path="Chart" element={<Chart />} />
-            {/* <Route path="Users" element={<Users />} /> */}
+            <Route path="Application" element={<Application />} />
+            <Route path="Approved" element={<Approved />} />
           </Route>
         </Routes>
       </BrowserRouter>

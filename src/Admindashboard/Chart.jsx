@@ -98,10 +98,10 @@ const Chart = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
-            { title: "Highest donation", value: "$500" },
-            { title: "New donors", value: "125" },
-            { title: "Upcoming events", value: "8" },
-            { title: "Hot Items", value: "12" },
+            { title: "Highest application", value: "$500" },
+            { title: "New users", value: "125" },
+            { title: "Total of applied", value: "8" },
+            
           ].map((metric, index) => (
             <div key={index} className="bg-gray-100 rounded-lg p-4">
               <h3 className="text-sm sm:text-base font-semibold text-gray-800 mb-2">

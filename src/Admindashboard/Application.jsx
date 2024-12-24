@@ -6,7 +6,7 @@ import { useState,useEffect } from 'react';
 import { ToastContainer, toast } from "react-toastify";
 import { Link } from 'react-router-dom';
 
-const Users = () => {
+const Application = () => {
 
   const[users, setUsers] = useState ([]);
 
@@ -58,7 +58,7 @@ const Users = () => {
 
   return (
     <div data-aos="zoom-in" className="mt-10">
-      <span className="text-1xl font-bold">Users</span>
+      <span className="text-1xl font-bold">Users Application</span>
 
 
       <div className="bg-white p-4 rounded-lg overflow-x-auto">
@@ -71,12 +71,10 @@ const Users = () => {
               Lastname
             </span>
             <span className="font-bold w-full md:w-1/6 text-sm p-2">
-              Username
+              phone
             </span>
             <span className="font-bold w-full md:w-1/6 text-sm p-2">Email</span>
-            <span className="font-bold w-full md:w-1/6 text-sm p-2">
-              Location
-            </span>
+          
             <span className="font-bold w-full md:w-1/6 text-sm p-2">
               Action
             </span>
@@ -121,6 +119,7 @@ const Users = () => {
   );
 }
 
-export default Users
+export default Application
+
 
 

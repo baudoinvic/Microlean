@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Hero from './components/Hero'
-import About from './About/About'
+
 
 const Homepage = () => {
   return (

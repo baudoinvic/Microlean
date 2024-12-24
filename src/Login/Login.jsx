@@ -34,9 +34,9 @@ const Login = () => {
         if (user.role === "admin") {
           navigate("/Admindashboard/Dashboard");
         } else {
-          navigate("/donation");
+          navigate("/Loan");
         }
-      }, 2000); // Adjust the delay as needed
+      }, 2000); 
     } catch (error) {
       console.log(error);
       toast.error("An error occurred. Please try again.");
